@@ -4,24 +4,17 @@ public class Father {
     private int years;
     private String name;
 
-    public Father(int years, String machine) {
+    public Father(int years, String name) {
         this.years = years;
-        this.name = machine;
+        this.name = name;
     }
 
     public int getYears() {
         return years;
     }
 
-    public void setYears(int years) {
-        this.years = years;
-    }
-
-    public String getString() {
+    public String getName() {
         return name;
     }
 
-    public void setString(String name) {
-        this.name = name;
-    }
 }

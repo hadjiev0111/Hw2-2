@@ -11,24 +11,18 @@ public class Main {
         mother.print();
     }
     public static Father createObjects(String className){
-        Father father = new Father(39,"BMW");
+        Father object = new Father(39,"Michael");
         switch (className) {
-            case "Daughter" -> {
-                father = new Daughter(17,"Ariana",1 );
-                father.setYears(17);
-                father.setString("Ariana");
-            }
             case "Son" -> {
-                father = new Son(3,"Mercedes","BMW");
-                father.setYears(3);
-                father.setString("John");
+                object = new Son(3,"John", "Machine");
+            }
+            case "Daughter" -> {
+                object = new Daughter(17,"Ariana",11 );
             }
             case "Mother" -> {
-                father = new Mother(35,"Lexus","Lagman");
-                father.setYears(35);
-                father.setString("Mariya");
+                object = new Mother(35,"Mariya","Pizza");
             }
         }
-        return father;
+        return object;
     }
 }

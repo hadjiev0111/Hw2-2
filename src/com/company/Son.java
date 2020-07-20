@@ -1,25 +1,21 @@
 package com.company;
 
 public class Son extends Father implements Printable{
-    private String machine;
+    private String toy;
 
-    public Son(int years, String machine, String machine1) {
-        super(years, machine);
-        this.machine = machine1;
+    public Son(int years, String name, String toy) {
+        super(years, name);
+        this.toy = toy;
     }
 
-    public String getMachine() {
-        return machine;
-    }
-
-    public void setMachine(String machine) {
-        this.machine = machine;
+    public String getToy() {
+        return toy;
     }
 
     @Override
     public void print() {
-        System.out.println("Марка машины - " + getMachine());
+        System.out.println("Любимая игрушка - " + getToy());
         System.out.println("Лет - "+getYears());
-        System.out.println("Имя - "+getString());
+        System.out.println("Имя - "+getName());
     }
 }
